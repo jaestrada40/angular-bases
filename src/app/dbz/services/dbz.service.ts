@@ -23,7 +23,7 @@ export class DbzService {
     power: 7500
   }];
 
-  onNeCharacter( character:Character ):void {
+  addCharacter( character:Character ):void {
 
     const newCharacter: Character ={ id: uuid(), ...character }
 
@@ -35,7 +35,7 @@ export class DbzService {
   // }
 
   deleteCharacterById( id:string ){
-    this.characters = this.characters.filter( character => character.id !== id  );
+    this.characters = this.characters.filter( character => character.id !== id  )
 
   }
 
